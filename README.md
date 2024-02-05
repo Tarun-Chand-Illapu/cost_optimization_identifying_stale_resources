@@ -3,15 +3,15 @@
 ## Description
 The provided Python script is a AWS Lambda function written in Python using the Boto3 library to manage EBS (Elastic Block Store) snapshots. The purpose of this Lambda function is to clean up unused EBS snapshots. Here's an overview of the script:
 
-  1. Import the Boto3 library, which provides a Python interface for AWS services.
+  1. Import the `Boto3` library, which provides a Python interface for AWS services.
 
-  2. Define the lambda_handler function, which is the entry point for the Lambda function.
+  2. Define the `lambda_handler` function, which is the entry point for the `Lambda function`.
 
   3. Create an EC2 client using Boto3.
 
-  4. Use describe_snapshots to retrieve information about all EBS snapshots owned by the AWS account (OwnerIds=['self']).
+  4. Use describe_snapshots to retrieve information about all EBS snapshots owned by the AWS account `(OwnerIds=['self'])`.
 
-  5. Use describe_instances to get information about all running EC2 instances. Extract the instance IDs and store them in a set (active_instance_ids).
+  5. Use describe_instances to get information about all running EC2 instances. Extract the instance IDs and store them in a set `(active_instance_ids)`.
 
   6. Iterate through each EBS snapshot obtained from the describe_snapshots response.
 
