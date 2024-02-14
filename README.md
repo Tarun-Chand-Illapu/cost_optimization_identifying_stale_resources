@@ -1,4 +1,4 @@
-# AWS Cloud Cost Optimization - Identifying Stale Resources.
+# AWS Cloud Cost Optimization - Identifying Stale Resources
 
 ## Description
 The provided Python script is a AWS Lambda function written in Python using the Boto3 library to manage EBS (Elastic Block Store) snapshots. The purpose of this Lambda function is to clean up unused EBS snapshots. Here's an overview of the script:
